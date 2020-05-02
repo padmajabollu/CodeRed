@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/add"
+        android:title="Add Student"
+        ></item>
+    <item
+
+        android:id="@+id/delete"
+        android:title="Delete Student"
+        ></item>
+
+    <item
+
+        android:id="@+id/total"
+        android:title="Toatal Payment"
+        ></item>
+
+    <item
+
+        android:id="@+id/payment"
+        android:title="Add Payment"
+        ></item>
+    <item
+
+        android:id="@+id/logout"
+        android:title="Logout"
+        ></item>
+
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "713773407086",
+    "firebase_url": "https://codered-f371f.firebaseio.com",
+    "project_id": "codered-f371f",
+    "storage_bucket": "codered-f371f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713773407086:android:9243b1a36b6a77c6fe3f7f",
+        "android_client_info": {
+          "package_name": "com.example.codered"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713773407086-a4km12juohgetl3b5fhjbvju3ro73f03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.codered",
+            "certificate_hash": "2d611f9470cfbff3bd1477bccc33e31d9a41aff6"
+          }
+        },
+        {
+          "client_id": "713773407086-uhuhse1f91fsbu0ce88uvpkgvpa5vod6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLcHnTjiAaBi9IpyHdvd-kKvoUOfNLWPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713773407086-uhuhse1f91fsbu0ce88uvpkgvpa5vod6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
