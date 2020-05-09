@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_student"
-    android:orientation="vertical">
-
+    tools:context=".add_student">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        >
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:errorEnabled="true"
         android:id="@+id/name"
-        android:layout_marginTop="70dp"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -48,33 +53,33 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:id="@+id/photo"
-            android:layout_marginLeft="15dp"
             />
         <Button
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/pick_img"
             android:text="gallery"
             android:textColor="#ffffff"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="45dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/border_button"
             />
         </LinearLayout>
 
 
     <Button
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
         android:id="@+id/add"
-        android:textAlignment="center"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:text="Add"
-
+        android:layout_gravity="center"
         android:layout_marginTop="60dp"
         android:background="@drawable/border_button"
         android:textColor="#FFFFFF"/>
+    </LinearLayout>
 
-
-</LinearLayout>
+</ScrollView>

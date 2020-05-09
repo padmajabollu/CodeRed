@@ -148,6 +148,12 @@ public class deletestudent extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+        else if (id==R.id.logout)
+        {
+            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
         else if (id==R.id.total)
         {
             Intent intent=new Intent(getApplicationContext(),total_payment.class);

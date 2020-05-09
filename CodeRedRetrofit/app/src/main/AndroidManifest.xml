@@ -14,15 +14,21 @@
         android:roundIcon="@drawable/codered_splash"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".deletestudent"/>
-        <activity android:name=".total_payment" />
-        <activity android:name=".add_student"/>
-        <activity android:name=".add_payment"/>
-        <activity android:name=".admin_login"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".deletestudent"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".total_payment"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add_student"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".add_payment"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin_login"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".splash_screen"
-            android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

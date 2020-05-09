@@ -86,7 +86,7 @@ public class add_student extends AppCompatActivity {
                 if (validateSender() && validatephno() && validateAttach())
                 {
                     String toast=sender1+"\n"+phno1+"\n"+media_title;
-                    Toast.makeText(getApplicationContext(),toast,Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),toast,Toast.LENGTH_SHORT).show();
                     Call<List<status>> call=ApiClient.getInstance().getApi().addStudent("insertStud",sender1,phno1,media_title,media1);
                     call.enqueue(new Callback<List<status>>() {
                         @Override
@@ -94,6 +94,9 @@ public class add_student extends AppCompatActivity {
                             List<status> list=new ArrayList<>();
                             list=response.body();
                             Toast.makeText(getApplicationContext(),list.get(0).getStatus(),Toast.LENGTH_SHORT).show();
+                            Intent intent=new Intent(getApplicationContext(),total_payment.class);
+                            startActivity(intent);
+                            finish();
 
                         }
 
@@ -236,6 +239,12 @@ public class add_student extends AppCompatActivity {
         if(id==R.id.add)
         {
             Intent intent=new Intent(getApplicationContext(),add_student.class);
+            startActivity(intent);
+            finish();
+        }
+        else if (id==R.id.logout)
+        {
+            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
             startActivity(intent);
             finish();
         }

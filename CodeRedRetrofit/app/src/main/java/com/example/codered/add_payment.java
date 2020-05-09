@@ -73,7 +73,7 @@ public class add_payment extends AppCompatActivity {
                 if (validateCustomer() && validateDistributor() && validateAmt())
                 {
                     String toast=dis1+"\n"+cus1+"\n"+amt1;
-                    Toast.makeText(getApplicationContext(),toast, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),toast, Toast.LENGTH_SHORT).show();
 
                     Call<List<status>> call=ApiClient.getInstance().getApi().addPayment("insertPay",dis1,cus1,amt1);
                     call.enqueue(new Callback<List<status>>() {
@@ -83,7 +83,9 @@ public class add_payment extends AppCompatActivity {
                             list=response.body();
 
                             Toast.makeText(getApplicationContext(),list.get(0).getStatus(),Toast.LENGTH_SHORT).show();
-
+                            Intent intent=new Intent(getApplicationContext(),total_payment.class);
+                            startActivity(intent);
+                            finish();
                         }
 
                         @Override
@@ -243,6 +245,12 @@ public class add_payment extends AppCompatActivity {
         if(id==R.id.add)
         {
             Intent intent=new Intent(getApplicationContext(),add_student.class);
+            startActivity(intent);
+            finish();
+        }
+        else if (id==R.id.logout)
+        {
+            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
             startActivity(intent);
             finish();
         }
